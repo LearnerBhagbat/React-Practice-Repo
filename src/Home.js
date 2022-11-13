@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState } from "react";
+import BlogList from "./BlogList";
 
 const Home = () => {
     const [name, setName]=useState('Mario');
@@ -31,6 +32,11 @@ const Home = () => {
                         <p>Written By {Blog.Author}</p>
                     </div>
                 ))}
+            </div>
+            <br />
+            <br />
+            <div className="home3">
+              <BlogList/>
             </div>
         </div>
      );
